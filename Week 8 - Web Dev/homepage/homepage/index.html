@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <title>William Chu</title>
+        <script>
+            function greet()
+            {
+                let name = document.querySelector("#name").value;
+                if (name === '')
+                {
+                    name = "Anon";
+                }
+                document.querySelector("#visitor").innerHTML = "Welcome to my Homepage, " + name + "! Enjoy your visit (:";
+            }
+        </script>
+    </head>
+    <body>
+        <div style="text-align: center">
+
+        <h1 style="line-height: 3.0"> Hello! I'm William, what is your name? </h1>
+
+        <form onsubmit="greet(); return false;">
+            <input type="text" id ="name">
+        </form>
+
+        <h1 id="visitor" style="line-height: 3.0"></h1>
+
+        </div>
+
+      <div class="dropdown" style="text-align: center; line-height: 3.0">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Click Me!
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="who_i_am.html">Who I Am</a>
+          <a class="dropdown-item" href="what_i_do.html">What I Do</a>
+          <a class="dropdown-item" href="contact_info.html">Let's Talk!</a>
+        </div>
+      </div>
+
+    </body>
+</html>

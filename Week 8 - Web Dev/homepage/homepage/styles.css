@@ -1,0 +1,30 @@
+.container {
+  margin-left: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.picture {
+  width: 275px;
+  height: 400px;
+  border-style: solid;
+}
+.info{
+  margin-left:30%;
+
+  width: 500px;
+  height: 400px;
+  background-color: #CDCDCD;
+  border-style: solid;
+}
+
+.info_words{
+  position: relative;
+  left: 90px;
+  top: 100px;
+}
+
+.paragraph_format{
+  margin-left: 30px;
+  margin-top: 30px;
+}
